@@ -8,36 +8,50 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">Logo</div>
-        <nav class="nav">
-            <a href="#section1" class="btn">Início</a>
-            <a href="#section2" class="btn">Sobre</a>
-            <a href="#section3" class="btn">Serviços</a>
-            <a href="#section4" class="btn">FAQ</a>
+        <div class="header__container">
+            <h1>
+                <img class="header__container--logo" src="./dist/images/dune_logo.png" alt="Logo Duna">
+            </h1>
+        </div>
+        <nav class="header__nav">
+            <a href="#inicio" class="header__nav--btn">Início</a>
+            <a href="#lancamentos" class="header__nav--btn">Lançamentos</a>
+            <a href="#elenco" class="header__nav--btn">Elenco</a>
+            <a href="#section4" class="header__nav--btn">FAQ</a>
         </nav>
     </header>
     
-    <section id="section1" class="hero">
-        <div class="overlay">
-            <img src="https://dummyimage.com/1080x480" alt="">
-            <p>Descrição da imagem de fundo</p>
+    <section id="inicio" class="hero">
+        <div class="hero__overlay">
+            <img class="hero__overlay--img" src="./dist/images/dune_logo.png" alt="Logo Duna">
         </div>
     </section>
     
-    <section id="section2" class="content">
-        <img src="dist/img/img1.jpg" alt="Imagem">
-        <div class="text">
-            <h2>Título</h2>
-            <p>Descrição do conteúdo.</p>
+    <section id="lancamentos" class="content">
+        <h2 class="content__title">Lançamentos</h2>
+        <div class="content__section">
+            <img class="conten__section--img" src="./dist/images/Dune_2021.jpeg" alt="Duna 2021">
+            <div class="content__section--text">
+                <h3>Dune (2021)</h3>
+                <p>
+                    Dirigido por Denis Villeneuve, Duna (2021) é uma adaptação cinematográfica do clássico da ficção científica escrito por Frank Herbert. O filme segue Paul Atreides (Timothée Chalamet), um jovem herdeiro de uma casa nobre que se vê no centro de um conflito interplanetário pelo controle de Arrakis, um planeta desértico que abriga a substância mais valiosa do universo: a especiaria Melange.
+                </p>
+                <p>
+                    Com um elenco estelar, incluindo Rebecca Ferguson, Oscar Isaac, Zendaya e Jason Momoa, Duna impressiona com sua grandiosidade visual, trilha sonora épica de Hans Zimmer e uma narrativa imersiva. O longa explora temas de destino, poder e sobrevivência, preparando o terreno para a continuação da saga.
+                </p>
+            </div>
+            <img class="conten__section--img" src="dist/images/Dune_2.jpeg" alt="Duna parte 2">
+            <div class="content__section--text">
+                <h3>Dune: Part Two</h3>
+                <p>
+                    Duna: Parte 2" é a sequência direta do aclamado filme de 2021, novamente sob a direção de Denis Villeneuve. O longa continua a jornada de Paul Atreides (Timothée Chalamet), que, após os eventos devastadores do primeiro filme, une forças com Chani (Zendaya) e os Fremen para buscar vingança contra aqueles que destruíram sua família. Enquanto se aprofunda na cultura Fremen e assume o papel de líder messiânico, Paul enfrenta dilemas entre seu amor por Chani e o destino do universo, tentando evitar um futuro sombrio que ele prevê em suas visões. O filme explora temas de poder, destino e sacrifício, oferecendo uma narrativa épica e visualmente deslumbrante.
+                </p>
+            </div>
         </div>
     </section>
     
-    <section id="section3" class="content">
-        <img src="dist/img/img2.jpg" alt="Imagem">
-        <div class="text">
-            <h2>Título</h2>
-            <p>Descrição do conteúdo.</p>
-        </div>
+    <section id="elenco" class="elenco">
+        
     </section>
     
     <section id="section4" class="faq">
