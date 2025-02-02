@@ -15,9 +15,9 @@
         </div>
         <nav class="header__nav">
             <a href="#inicio" class="header__nav--btn">Início</a>
-            <a href="#lancamentos" class="header__nav--btn">Lançamentos</a>
+            <a href="#producoes" class="header__nav--btn">Produções</a>
             <a href="#elenco" class="header__nav--btn">Elenco</a>
-            <a href="#section4" class="header__nav--btn">FAQ</a>
+            <a href="#faq" class="header__nav--btn">FAQ</a>
         </nav>
     </header>
     
@@ -27,10 +27,10 @@
         </div>
     </section>
     
-    <section id="lancamentos" class="content">
-        <h2 class="content__title">Lançamentos</h2>
+    <section id="producoes" class="content">
+        <h2 class="content__title">Produções</h2>
         <div class="content__section">
-            <img class="conten__section--img" src="./dist/images/Dune_2021.jpeg" alt="Duna 2021">
+            <img class="content__section--img" src="./dist/images/Dune_2021.jpeg" alt="Duna 2021">
             <div class="content__section--text">
                 <h3>Dune (2021)</h3>
                 <p>
@@ -40,7 +40,7 @@
                     Com um elenco estelar, incluindo Rebecca Ferguson, Oscar Isaac, Zendaya e Jason Momoa, Duna impressiona com sua grandiosidade visual, trilha sonora épica de Hans Zimmer e uma narrativa imersiva. O longa explora temas de destino, poder e sobrevivência, preparando o terreno para a continuação da saga.
                 </p>
             </div>
-            <img class="conten__section--img" src="dist/images/Dune_2.jpeg" alt="Duna parte 2">
+            <img class="content__section--img" src="dist/images/Dune_2.jpeg" alt="Duna parte 2">
             <div class="content__section--text">
                 <h3>Dune: Part Two</h3>
                 <p>
@@ -50,24 +50,147 @@
         </div>
     </section>
     
-    <section id="elenco" class="elenco">
-        
+    <section class="shows" id="elenco">
+        <nav class="shows__tabs">
+            <button data-tab-button="atreides" class="shows__tabs__button shows__tabs__button--is-active">
+                Atreides
+            </button>
+            <button data-tab-button="fremen" class="shows__tabs__button">
+                Fremen
+            </button>
+            <button data-tab-button="harkonnen" class="shows__tabs__button">
+                Harkonnen
+            </button>
+            <button data-tab-button="gesserit" class="shows__tabs__button">
+                Gesserit
+            </button>
+            <button data-tab-button="imperio" class="shows__tabs__button">
+                Império
+            </button>
+        </nav>
+        <ul data-tab-id="atreides" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Paul.webp" alt="Paul Atreides (Timothée Chalamet)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Duque.jpg" alt="Duque Leto Atreides (Oscar Isaac)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Lady.webp" alt="Lady Jessica (Rebecca Ferguson)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Gurney.jpg" alt="Gurney Halleck (Josh Brolin)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Duncan.jpeg" alt="Duncan Idaho (Jason Momoa)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/atreides/Thufir.jpeg" alt="Thufir Hawat (Stephen McKinley Henderson)">
+            </li>
+        </ul>
+        <ul data-tab-id="fremen" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/fremen/chani.jpg" alt="Chani (Zendaya)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/fremen/Stilgar.jpg" alt="Stilgar (Javier Bardem)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/fremen/Shishakli.webp" alt="Shishakli (Souheila Yacoub)">
+            </li>
+        </ul>
+        <ul data-tab-id="harkonnen" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/harkonnen/Barão.jpg" alt="Barão Vladimir Harkonnen (Stellan Skarsgård)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/harkonnen/Rabban.jpg" alt="Rabban Harkonnen (Dave Bautista)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/harkonnen/Feyd-Rautha.webp" alt="Feyd-Rautha Harkonnen (Austin Butler)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/harkonnen/Piter.webp" alt="Piter De Vries (David Dastmalchian)">
+            </li>
+        </ul>
+        <ul data-tab-id="gesserit" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/gesserit/Reverenda.jpg" alt="Reverenda Madre Gaius Helen Mohiam (Charlotte Rampling)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/gesserit/Margot.webp" alt="Lady Margot Fenring (Léa Seydoux)">
+            </li>
+        </ul>
+        <ul data-tab-id="imperio" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/imperio/Imperador.webp" alt="Imperador Shaddam IV (Christopher Walken)">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/imperio/Princesa.webp" alt="Princesa Irulan Corrino (Florence Pugh)">
+            </li>
+        </ul>
     </section>
     
-    <section id="section4" class="faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-            <summary>Pergunta 1?</summary>
-            <p>Resposta 1.</p>
-        </details>
-        <details>
-            <summary>Pergunta 2?</summary>
-            <p>Resposta 2.</p>
-        </details>
-    </section>
+    <section id="faq" class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que está incluído no Disney+?
+                </div>
+                <div class="faq__questions__item__answer">
+                    <p class="faq__questions__item__answer__p">
+                        <span class="text">Benefícios de assinar o Disney+:</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                <span class="text">Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="text">Os torneios mais importantes do mundo e programas da ESPN ao vivo.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="text">Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="text">Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais formas de pagamento posso utilizar?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p class="faq__questions__item__answer__p">
+                        <span class="text">Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.</span>
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Onde posso assistir ao Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p class="faq__questions__item__answer__p">
+                        <span class="text">O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a <a href="#">lista completa de dispositivos compatíveis na Central de Ajuda.</a></span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>>
     
     <footer class="footer">
-        <p>© 2025 Landing Page. Todos os direitos reservados.</p>
+        <p>© 2025 Landing Page Dune. Todos os direitos reservados.</p>
     </footer>
 
     <script src="dist/js/main.js"></script>

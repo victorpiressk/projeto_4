@@ -3,13 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: rgba(93, 151, 143, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    transition: backgroud-color, 3s ease;
+    transition: backgroud-color, 1.5s ease;
     z-index: 1000;
 
     &--is-hidden {
@@ -44,7 +44,7 @@
             transition: background 0.3s;
 
             &:hover {
-                background: #a09b6e;
+                background: #1A3D34;
             }
         }
     }

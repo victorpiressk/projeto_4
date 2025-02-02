@@ -1,5 +1,7 @@
 @use 'header';
 @use 'hero';
+@use 'shows';
+@use 'faq';
 
 /* Reset básico */
 * {
@@ -7,17 +9,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    list-style: none;
 }
 
 body {
     line-height: 1.6;
-    background-color: rgb(93, 151, 143);
-    color: #333;
+    background-color: #102A25;
+    color: #fff;
     padding-top: 80px; /* Para compensar o header fixo */
 }
 
 .content {
-    padding: 24px 0;
+    padding: 5.6vw;
     &__title {
         text-align:  center;
         padding-bottom: 14px;
@@ -26,15 +29,32 @@ body {
     &__section {
         padding: 0 5.6vw;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: .5fr 1fr;
         align-items: center;
         gap: 20px;
 
         &--img {
-            margin-left: 100px;
+            justify-self: center;
+            align-self: center;
+            max-width: 50%;
+            border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: scale, .5s ease;
+            }
         }
 
         &--text {
+            transition: scale, .5s ease;
+            &:hover {
+                transform: scale(1.1);
+                padding: 5px;
+                border-radius: 10px;
+                box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+                transition: scale, .5s ease;
+            }
+
             p {
                 padding-top: 5px;
             }
@@ -42,14 +62,8 @@ body {
     }
 }
 
-.content img {
-    max-width: 50%;
-    border-radius: 10px;
-}
-
 .faq {
     padding: 50px;
-    background: #fff;
 }
 
 .faq details {
