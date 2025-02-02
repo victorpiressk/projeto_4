@@ -1,0 +1,21 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/dune_background.jpg);
+    height: 60vh;
+    background-size: cover;
+    margin: 10px 0;
+    
+
+    &__overlay {
+        &--img {
+            max-width: 720px;
+        }
+    }
+
+    &__image {
+        max-width: 1910px;
+        width: 100%;
+    }
+}
