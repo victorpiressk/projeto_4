@@ -1,10 +1,12 @@
+@use 'variaveis';
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: rgba(34, 34, 34, 0.8);
-    color: #fff;
+    background-color: variaveis.$corFundoHeader;
+    color: variaveis.$corTextoPrincipal;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,15 +40,15 @@
     &__nav {
         &--btn {
             text-decoration: none;
-            color: #fff;
+            color: variaveis.$corTextoPrincipal;
             padding: 10px 15px;
-            background: rgba(0, 0, 0, 0.5);
+            background: variaveis.$corFundoBotao;
             border-radius: 5px;
             margin-left: 10px;
             transition: background 0.3s;
 
             &:hover {
-                background: #1A3D34;
+                background: variaveis.$corFundoSecundario;
             }
         }
     }

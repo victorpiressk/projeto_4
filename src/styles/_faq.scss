@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .faq {
     padding: 5.6vw;
 
@@ -10,7 +12,7 @@
 
     &__list {
         &__item {
-            background-color: #1A3D34;
+            background-color: variaveis.$corFundoSecundario;
             margin-bottom: 16px;
     
             &--question {
@@ -47,10 +49,6 @@
                     text-align: left;
                     padding-top: 24px;
                     padding-left: 24px;
-    
-                    a {
-                        color: #fff;
-                    }
                 }
     
                 ul {
@@ -59,7 +57,7 @@
                     li::marker {
                         content: "•";
                         font-size: 16px;
-                        color: silver;
+                        color: variaveis.$corTextoPrincipal;
                         
                     }
 

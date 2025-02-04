@@ -3,8 +3,9 @@
 @use 'char';
 @use 'faq';
 @use 'menu-toggler';
+@use 'variaveis';
+@use 'content';
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -15,79 +16,63 @@
 
 body {
     line-height: 1.6;
-    background-color: #102A25;
-    color: #fff;
-    padding-top: 80px; /* Para compensar o header fixo */
-}
-
-.content {
-    padding: 5.6vw;
-    &__title {
-        text-align:  center;
-        padding-bottom: 14px;
-    }
-
-    @media (max-width: 1023px) {
-        &__title {
-            padding-bottom: 48px;
-        }
-    }
-
-    &__section {
-        padding: 0 5.6vw;
-        display: grid;
-        grid-template-columns: .5fr 1fr;
-        align-items: center;
-        gap: 20px;
-
-        @media (max-width: 767px) {
-            grid-template-columns: 1fr;
-        }
-
-        @media (max-width: 1023px) {
-            grid-template-columns: 1fr;
-        }
-
-        &--img {
-            justify-self: center;
-            align-self: center;
-            max-width: 100%;
-            border-radius: 10px;
-
-            &:hover {
-                transform: scale(1.1);
-                transition: scale, .5s ease;
-            }
-        }
-
-        &--text {
-            transition: scale, .5s ease;
-            &:hover {
-                transform: scale(1.1);
-                padding: 5px;
-                border-radius: 10px;
-                box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
-                transition: scale, .5s ease;
-            }
-
-            p {
-                padding-top: 5px;
-            }
-        }
-    }
-}
-
-.faq {
-    padding: 50px;
-}
-
-.faq details {
-    margin-bottom: 10px;
+    background-color: variaveis.$corFundoBody;
+    color: variaveis.$corTextoPrincipal;
+    padding-top: 80px;
 }
 
 .footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: silver;
+    background: variaveis.$corFundoRodape;
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(12px);
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(10px);
+    }
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(28px);
+    }
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(20px);
+    }
 }
