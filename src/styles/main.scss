@@ -1,7 +1,8 @@
 @use 'header';
 @use 'hero';
-@use 'shows';
+@use 'char';
 @use 'faq';
+@use 'menu-toggler';
 
 /* Reset básico */
 * {
@@ -26,6 +27,12 @@ body {
         padding-bottom: 14px;
     }
 
+    @media (max-width: 1023px) {
+        &__title {
+            padding-bottom: 48px;
+        }
+    }
+
     &__section {
         padding: 0 5.6vw;
         display: grid;
@@ -33,10 +40,18 @@ body {
         align-items: center;
         gap: 20px;
 
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width: 1023px) {
+            grid-template-columns: 1fr;
+        }
+
         &--img {
             justify-self: center;
             align-self: center;
-            max-width: 50%;
+            max-width: 100%;
             border-radius: 10px;
 
             &:hover {

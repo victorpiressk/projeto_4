@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
     const alturahero = heroSection.clientHeight;
 
+    const menuToggle = document.querySelector(".header__toggle");
+    const navMenu = document.querySelector(".header__nav");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    })
+
     window.addEventListener('scroll', function() {
         const posicaoAtual = window.scrollY;
 
@@ -22,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const abaAlvo = botao.target.dataset.tabButton;
             const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             escondeTodasAbas();
-            aba.classList.add('shows__list--is-active');
+            aba.classList.add('char__list--is-active');
             removeBotaoAtivo();
-            botao.target.classList.add('shows__tabs__button--is-active');
+            botao.target.classList.add('char__tabs__button--is-active');
         })
     }
 
@@ -45,7 +52,7 @@ function exibeElementosDoHeader() {
 }
 
 function abreOuFechaResposta(elemento) {
-    const classe ='faq__questions__item--is-open';
+    const classe ='faq__list__item--is-open';
     const elementoPai = elemento.target.parentNode;
 
     elementoPai.classList.toggle(classe);
@@ -55,7 +62,7 @@ function removeBotaoAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('shows__tabs__button--is-active');
+        buttons[i].classList.remove('char__tabs__button--is-active');
     }
 }
 
@@ -63,6 +70,6 @@ function escondeTodasAbas() {
     const buttons = document.querySelectorAll('[data-tab-id]');
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('shows__list--is-active');
+        buttons[i].classList.remove('char__list--is-active');
     }
 }

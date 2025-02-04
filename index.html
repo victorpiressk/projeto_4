@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Landing Page Dune</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
                 <img class="header__container--logo" src="./dist/images/dune_logo.png" alt="Logo Duna">
             </h1>
         </div>
+        <button class="header__toggle" aria-label="Abrir Menu">&#9776;</button>
         <nav class="header__nav">
             <a href="#inicio" class="header__nav--btn">Início</a>
             <a href="#producoes" class="header__nav--btn">Produções</a>
@@ -50,82 +51,82 @@
         </div>
     </section>
     
-    <section class="shows" id="elenco">
-        <nav class="shows__tabs">
-            <button data-tab-button="atreides" class="shows__tabs__button shows__tabs__button--is-active">
+    <section class="char" id="elenco">
+        <nav class="char__tabs">
+            <button data-tab-button="atreides" class="char__tabs__button char__tabs__button--is-active">
                 Atreides
             </button>
-            <button data-tab-button="fremen" class="shows__tabs__button">
+            <button data-tab-button="fremen" class="char__tabs__button">
                 Fremen
             </button>
-            <button data-tab-button="harkonnen" class="shows__tabs__button">
+            <button data-tab-button="harkonnen" class="char__tabs__button">
                 Harkonnen
             </button>
-            <button data-tab-button="gesserit" class="shows__tabs__button">
+            <button data-tab-button="gesserit" class="char__tabs__button">
                 Gesserit
             </button>
-            <button data-tab-button="imperio" class="shows__tabs__button">
+            <button data-tab-button="imperio" class="char__tabs__button">
                 Império
             </button>
         </nav>
-        <ul data-tab-id="atreides" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
+        <ul data-tab-id="atreides" class="char__list char__list--is-active">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Paul.webp" alt="Paul Atreides (Timothée Chalamet)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Duque.jpg" alt="Duque Leto Atreides (Oscar Isaac)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Lady.webp" alt="Lady Jessica (Rebecca Ferguson)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Gurney.jpg" alt="Gurney Halleck (Josh Brolin)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Duncan.jpeg" alt="Duncan Idaho (Jason Momoa)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/atreides/Thufir.jpeg" alt="Thufir Hawat (Stephen McKinley Henderson)">
             </li>
         </ul>
-        <ul data-tab-id="fremen" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="fremen" class="char__list">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/fremen/chani.jpg" alt="Chani (Zendaya)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/fremen/Stilgar.jpg" alt="Stilgar (Javier Bardem)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/fremen/Shishakli.webp" alt="Shishakli (Souheila Yacoub)">
             </li>
         </ul>
-        <ul data-tab-id="harkonnen" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="harkonnen" class="char__list">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/harkonnen/Barão.jpg" alt="Barão Vladimir Harkonnen (Stellan Skarsgård)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/harkonnen/Rabban.jpg" alt="Rabban Harkonnen (Dave Bautista)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/harkonnen/Feyd-Rautha.webp" alt="Feyd-Rautha Harkonnen (Austin Butler)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/harkonnen/Piter.webp" alt="Piter De Vries (David Dastmalchian)">
             </li>
         </ul>
-        <ul data-tab-id="gesserit" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="gesserit" class="char__list">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/gesserit/Reverenda.jpg" alt="Reverenda Madre Gaius Helen Mohiam (Charlotte Rampling)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/gesserit/Margot.webp" alt="Lady Margot Fenring (Léa Seydoux)">
             </li>
         </ul>
-        <ul data-tab-id="imperio" class="shows__list">
-            <li class="shows__list__item">
+        <ul data-tab-id="imperio" class="char__list">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/imperio/Imperador.webp" alt="Imperador Shaddam IV (Christopher Walken)">
             </li>
-            <li class="shows__list__item">
+            <li class="char__list__item">
                 <img src="./dist/images/elenco/imperio/Princesa.webp" alt="Princesa Irulan Corrino (Florence Pugh)">
             </li>
         </ul>
@@ -133,61 +134,64 @@
     
     <section id="faq" class="faq">
         <h2 class="title">Perguntas frequentes</h2>
-        <ul class="faq__questions">
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluído no Disney+?
+        <ul class="faq__list">
+            <li class="faq__list__item">
+                <div class="faq__list__item--question" data-faq-question>
+                    Qual o melhor Duna 1 ou 2?
                 </div>
-                <div class="faq__questions__item__answer">
-                    <p class="faq__questions__item__answer__p">
-                        <span class="text">Benefícios de assinar o Disney+:</span>
+                <div class="faq__list__item--answer">
+                    <p class="faq__list__item--answer-p">
+                        <span class="text">Depende do que você procura em um filme!</span>
                     </p>
                     <ul>
                         <li>
                             <p>
-                                <span class="text">Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.</span>
+                                <span>Duna: Parte 1 (2021) é mais introdutório, focado na construção do mundo, na política das casas e no desenvolvimento dos personagens. O ritmo é mais contemplativo e visualmente deslumbrante.</span>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <span class="text">Os torneios mais importantes do mundo e programas da ESPN ao vivo.</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span class="text">Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span class="text">Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.</span>
+                                <span>Duna: Parte 2 (2024) é mais intenso, com mais ação, batalhas épicas e desenvolvimento da jornada de Paul Atreides. A narrativa é mais dinâmica e entrega grandes momentos da história.</span>
                             </p>
                         </li>
                     </ul>
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Quais formas de pagamento posso utilizar?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    <p class="faq__questions__item__answer__p">
-                        <span class="text">Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.</span>
+                    <p class="faq__list__item--answer-p">
+                        Se você gosta de histórias bem construídas e imersivas, pode preferir a Parte 1. Se busca mais ação e desfechos dramáticos, a Parte 2 pode ser a melhor escolha.
                     </p>
                 </div>
             </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Onde posso assistir ao Disney+?
+            <li class="faq__list__item">
+                <div class="faq__list__item--question" data-faq-question>
+                    Quantos filmes de Duna vão ter?
                 </div>
-                <div class="faq__questions__item__answer text--big">
-                    <p class="faq__questions__item__answer__p">
-                        <span class="text">O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a <a href="#">lista completa de dispositivos compatíveis na Central de Ajuda.</a></span>
+                <div class="faq__list__item--answer text--big">
+                    <p class="faq__list__item--answer-p">
+                        <span class="text">Até o momento, três filmes estão planejados para a franquia dirigida por Denis Villeneuve:</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Duna: Parte 1 (2021) – Adaptou a primeira metade do livro Duna de Frank Herbert.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Duna: Parte 2 (2024) – Concluiu a adaptação do livro Duna.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Duna: Parte 3 (sem data confirmada) – Deve adaptar O Messias de Duna, o segundo livro da saga, expandindo a história de Paul Atreides.
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="faq__list__item--answer-p">
+                        <span class="text">Villeneuve já mencionou que enxerga O Messias de Duna como o encerramento de sua trilogia. Porém, a saga de livros tem mais continuações, então pode haver mais filmes no futuro.</span>
                     </p>
                 </div>
             </li>
         </ul>
-    </section>>
+    </section>
     
     <footer class="footer">
         <p>© 2025 Landing Page Dune. Todos os direitos reservados.</p>

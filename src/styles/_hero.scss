@@ -3,19 +3,41 @@
     align-items: center;
     justify-content: center;
     background-image: url(../images/dune_background.jpg);
-    height: 60vh;
-    background-size: cover;
-    margin: 10px 0;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
     
 
     &__overlay {
         &--img {
             max-width: 720px;
+            margin-bottom: 80px;
         }
     }
 
-    &__image {
-        max-width: 1910px;
-        width: 100%;
+    @media (max-width: 767px) {
+        background-image: url(../images/dune_background_2.jpg);
+        min-height: 80vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &__overlay {
+            &--img {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        height: 62vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &__overlay {
+            &--img {
+                max-width: 360px;
+                margin-bottom: 180px;
+            }
+        }
     }
 }

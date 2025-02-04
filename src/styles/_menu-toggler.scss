@@ -1,0 +1,33 @@
+@use 'header';
+
+.header {
+    &__toggle {
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    @media (max-width: 767px) {
+        &__nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            padding-left: 240px;
+        }
+
+        &__toggle {
+            display: block;
+        }
+
+        &__nav.active {
+            display: flex;
+        }
+    }
+}
